@@ -68,6 +68,10 @@ button {
     cursor: pointer;
 }
 
+ul {
+    list-style: none;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -92,5 +96,84 @@ body {
     max-width: 1240px;
     padding: 0px 2rem;
     margin: 0px auto;
+}
+
+
+/* SITE HEADER STYLES */
+.header {
+    padding: 2.8rem 0;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-logo {
+    display: flex;
+}
+.site-logo:hover {
+    opacity: 0.8;
+}
+.site-logo__img {
+    width: 177px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+.sitenav__list {
+    display: flex;
+    align-items: center;
+}
+.sitenav__item:not(:last-child) {
+    margin-right: 4rem;
+}
+.sitenav__link {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--color-secondary);
+}
+.sitenav__link:hover {
+    color: var(--color-primary);
+}
+.bars-btn {
+    display: none;
+}
+.bars-btn__img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .sitenav {
+        display: none;
+    }
+    .bars-btn {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 370px) {
+
 }
 
