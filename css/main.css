@@ -1,0 +1,96 @@
+/* SITE FONTS */
+/* JOST */
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Regular.woff2') format('woff2'),
+        url('../fonts/Jost-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* DM SERIF DISPLAY */
+@font-face {
+    font-family: 'Serif Display';
+    src: url('../fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/DMSerifDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* CUSTOM PROPERTY */
+:root {
+    /* FONTS */
+    --serif: "Serif Display", "Georgia", serif;
+    --jost: "Jost", "Arial", sans-serif; 
+
+    /* COLORS */
+    --color-primary: #cda274;
+    --color-secondary: #292f36;
+    --color-white: #fff;
+    --color-text: #4d5053;
+
+    /* BACKGROUND COLOR */
+    --gray-bg-color: #f4f0ec;
+    --white-bg-color: #fff;
+    --blue-bg-color: #292f36;
+}
+
+/* GLOBAL STYLES */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 1px dashed var(--color-primary);
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--jost);
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: var(--color-text);
+    background-color: var(--white-bg-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0px 2rem;
+    margin: 0px auto;
+}
+
