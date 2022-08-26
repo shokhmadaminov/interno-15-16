@@ -307,6 +307,67 @@ body {
     animation: arrowAnimation 2s linear;
 }
 
+/* CALL SECTION STYLES */
+.call {
+    margin-bottom: 14rem;
+}
+.call__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.call__text-wrapper {
+    width: 100%;
+    max-width: 530px;
+}
+.call__title {
+    width: 100%;
+    max-width: 450px;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 1.3;
+    color: var(--color-secondary);
+    margin-bottom: 4.2rem;
+}
+.call__text:nth-child(3) {
+    width: 100%;
+    max-width: 490px;
+    margin-bottom: 4rem;
+}
+.call__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.call__phone-link {
+    width: 93px;
+    height: 93px;
+    background-color: var(--gray-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.call__phone-number {
+    display: flex;
+    flex-direction: column;
+}
+.call__phone-number span:first-child {
+    font-size: 2.4rem ;
+    line-height: 1.5;
+}
+.call__btn {
+    padding: 1.7rem 2.4rem 1.6rem 3.3rem;
+}
+.call__img {
+    width: 592px;
+    height: 635px;
+    object-fit: contain;
+    object-position: center;
+}
+
 
 
 
@@ -333,6 +394,26 @@ body {
     }
     .information__item:first-child .information__text {
         margin-bottom: 3.5rem;
+    }
+    .call__container {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .call__title {
+        max-width: 100%;
+    }
+    .call__text {
+        width: 100%;
+        max-width: 100%;
+    }
+    .call__text:nth-child(3) {
+        max-width: 100%;
+    }
+    .call__phone {
+        justify-content: center;
+    }
+    .call__img {
+        margin-bottom: 2rem;
     }
 }
 
@@ -385,6 +466,10 @@ body {
         width: 100%;
         max-width: 450px;
     }
+    .call__img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -399,6 +484,15 @@ body {
     }
     .information {
         padding: 0rem;
+    }
+    .call__title {
+        font-size: 3.5rem;
+    }
+    .call__text {
+        font-size: 2rem;
+    }
+    .call {
+        margin-bottom: 8rem;
     }
 }
 
@@ -427,6 +521,17 @@ body {
 }
 
 @media only screen and (max-width: 370px) {
-
+    .call__title {
+        font-size: 3rem;
+    }
+    .call__text {
+        font-size: 1.8rem;
+    }
+    .call__phone {
+        font-size: 1.8rem;
+    }
+    .call__btn {
+        padding: 1.2rem 2rem;
+    }
 }
 
